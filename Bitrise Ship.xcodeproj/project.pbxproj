@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B8980A52379B68100C1567F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8980A42379B68100C1567F /* UserNotifications.framework */; };
+		1B8980A72379B68100C1567F /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8980A62379B68100C1567F /* UserNotificationsUI.framework */; };
+		1B8980AA2379B68100C1567F /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8980A92379B68100C1567F /* NotificationViewController.swift */; };
+		1B8980AD2379B68100C1567F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8980AB2379B68100C1567F /* MainInterface.storyboard */; };
+		1B8980B22379B68100C1567F /* Notification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1B8980A22379B68100C1567F /* Notification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1B98FDFE22C39D260098D470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FDFD22C39D260098D470 /* AppDelegate.swift */; };
 		1B98FE0022C39D260098D470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98FDFF22C39D260098D470 /* ViewController.swift */; };
 		1B98FE0322C39D260098D470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B98FE0122C39D260098D470 /* Main.storyboard */; };
@@ -17,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1B8980AF2379B68100C1567F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B98FDF222C39D260098D470 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B8980A12379B68100C1567F;
+			remoteInfo = Notification;
+		};
 		1B98FE0F22C39D2C0098D470 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1B98FDF222C39D260098D470 /* Project object */;
@@ -33,7 +45,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1B8980B12379B68100C1567F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1B8980B22379B68100C1567F /* Notification.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1B8980A22379B68100C1567F /* Notification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Notification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B8980A42379B68100C1567F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		1B8980A62379B68100C1567F /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		1B8980A92379B68100C1567F /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		1B8980AC2379B68100C1567F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1B8980AE2379B68100C1567F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B98FDFA22C39D260098D470 /* Bitrise Ship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitrise Ship.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B98FDFD22C39D260098D470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B98FDFF22C39D260098D470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +83,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B89809F2379B68100C1567F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8980A72379B68100C1567F /* UserNotificationsUI.framework in Frameworks */,
+				1B8980A52379B68100C1567F /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1B98FDF722C39D260098D470 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,12 +116,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B8980A32379B68100C1567F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B8980A42379B68100C1567F /* UserNotifications.framework */,
+				1B8980A62379B68100C1567F /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B8980A82379B68100C1567F /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				1B8980A92379B68100C1567F /* NotificationViewController.swift */,
+				1B8980AB2379B68100C1567F /* MainInterface.storyboard */,
+				1B8980AE2379B68100C1567F /* Info.plist */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		1B98FDF122C39D260098D470 = {
 			isa = PBXGroup;
 			children = (
 				1B98FDFC22C39D260098D470 /* Bitrise Ship */,
 				1B98FE1122C39D2C0098D470 /* Bitrise ShipTests */,
 				1B98FE1C22C39D2C0098D470 /* Bitrise ShipUITests */,
+				1B8980A82379B68100C1567F /* Notification */,
+				1B8980A32379B68100C1567F /* Frameworks */,
 				1B98FDFB22C39D260098D470 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +153,7 @@
 				1B98FDFA22C39D260098D470 /* Bitrise Ship.app */,
 				1B98FE0E22C39D2C0098D470 /* Bitrise ShipTests.xctest */,
 				1B98FE1922C39D2C0098D470 /* Bitrise ShipUITests.xctest */,
+				1B8980A22379B68100C1567F /* Notification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +193,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1B8980A12379B68100C1567F /* Notification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B8980B52379B68100C1567F /* Build configuration list for PBXNativeTarget "Notification" */;
+			buildPhases = (
+				1B89809E2379B68100C1567F /* Sources */,
+				1B89809F2379B68100C1567F /* Frameworks */,
+				1B8980A02379B68100C1567F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notification;
+			productName = Notification;
+			productReference = 1B8980A22379B68100C1567F /* Notification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1B98FDF922C39D260098D470 /* Bitrise Ship */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B98FE2222C39D2C0098D470 /* Build configuration list for PBXNativeTarget "Bitrise Ship" */;
@@ -137,10 +217,12 @@
 				1B98FDF622C39D260098D470 /* Sources */,
 				1B98FDF722C39D260098D470 /* Frameworks */,
 				1B98FDF822C39D260098D470 /* Resources */,
+				1B8980B12379B68100C1567F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1B8980B02379B68100C1567F /* PBXTargetDependency */,
 			);
 			name = "Bitrise Ship";
 			productName = "Bitrise Ship";
@@ -189,10 +271,13 @@
 		1B98FDF222C39D260098D470 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Bitrise;
 				TargetAttributes = {
+					1B8980A12379B68100C1567F = {
+						CreatedOnToolsVersion = 11.1;
+					};
 					1B98FDF922C39D260098D470 = {
 						CreatedOnToolsVersion = 10.2.1;
 						SystemCapabilities = {
@@ -230,11 +315,20 @@
 				1B98FDF922C39D260098D470 /* Bitrise Ship */,
 				1B98FE0D22C39D2C0098D470 /* Bitrise ShipTests */,
 				1B98FE1822C39D2C0098D470 /* Bitrise ShipUITests */,
+				1B8980A12379B68100C1567F /* Notification */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1B8980A02379B68100C1567F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8980AD2379B68100C1567F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1B98FDF822C39D260098D470 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +356,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1B89809E2379B68100C1567F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B8980AA2379B68100C1567F /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1B98FDF622C39D260098D470 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +392,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1B8980B02379B68100C1567F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B8980A12379B68100C1567F /* Notification */;
+			targetProxy = 1B8980AF2379B68100C1567F /* PBXContainerItemProxy */;
+		};
 		1B98FE1022C39D2C0098D470 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1B98FDF922C39D260098D470 /* Bitrise Ship */;
@@ -303,6 +410,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1B8980AB2379B68100C1567F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B8980AC2379B68100C1567F /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		1B98FE0122C39D260098D470 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -322,6 +437,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1B8980B32379B68100C1567F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 72SA8V3WYL;
+				INFOPLIST_FILE = Notification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.bitrise.Bitrise-Ship.Notification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "BitriseBot-Wildcard";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B8980B42379B68100C1567F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 72SA8V3WYL;
+				INFOPLIST_FILE = Notification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.bitrise.Bitrise-Ship.Notification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "BitriseBot-Wildcard";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1B98FE2022C39D2C0098D470 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -441,6 +598,7 @@
 		1B98FE2322C39D2C0098D470 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
@@ -461,6 +619,7 @@
 		1B98FE2422C39D2C0098D470 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
@@ -563,6 +722,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B8980B52379B68100C1567F /* Build configuration list for PBXNativeTarget "Notification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B8980B32379B68100C1567F /* Debug */,
+				1B8980B42379B68100C1567F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1B98FDF522C39D260098D470 /* Build configuration list for PBXProject "Bitrise Ship" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
